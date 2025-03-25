@@ -5,10 +5,11 @@
 /* Dibuat oleh : Ade Chandra Nugraha */
 /* Tanggal     : 24-10-2001 */
 
-#ifndef spnrsll_H
-#define spnrsll_H
+#ifndef SPNRSLL_H
+#define SPNRSLL_H
 #include "boolean.h"
 #include <stdio.h>
+
 #define Nil NULL
 #define Info(P) (P)->info
 #define Next(P) (P)->next
