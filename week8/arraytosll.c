@@ -81,8 +81,6 @@ void hapusKota(arrtosll daftarKota[], int *jumlahKota, int inputIndex) {
     printf("\nKota %d berhasil dihapus beserta semua penduduknya.\n", inputIndex);
 }
 
-
-
 void hapusOrang(address *head, nama targetNama) {   
         address current = *head;
         address prev = NULL;
