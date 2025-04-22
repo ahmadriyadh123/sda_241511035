@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "conversion.h"
-#include "STACK.H"
+#include "stack.h"
 
 void DecimalToBinary(int decimal) {
     Stack S;

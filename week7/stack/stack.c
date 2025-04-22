@@ -2,7 +2,7 @@
 /* Deskripsi   : Body ADT stack yang diimplementasikan dgn linked list */
 /* Dibuat oleh : Ade Chandra Nugraha*/
 
-#include "STACK.H"
+#include "stack.h"
 #include "spnrsll.h"
 
 /**** Perubahan nilai komponen struktur ****/
