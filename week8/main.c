@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "asll.h"
+#include "arraytosll.h"
 
 int main() {
     arrtosll daftarKota[10];
