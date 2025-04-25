@@ -12,7 +12,7 @@ typedef struct tElmtList {
 typedef struct KotaNode *addressKota;
 typedef struct KotaNode {
     infotype kt;
-    addressKota next;
+    addressKota r;
     address p;        
 } KotaNode;
 

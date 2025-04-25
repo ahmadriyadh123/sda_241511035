@@ -30,7 +30,7 @@ int main() {
 
                 addressKota current = daftarKota;
                 while (current != NULL && strcmp(current->kt, namaKota) != 0) {
-                    current = current->next;
+                    current = current->r;
                 }
 
                 if (current == NULL) {
@@ -55,7 +55,7 @@ int main() {
 
                 current = daftarKota;
                 while (current != NULL && strcmp(current->kt, namaKota) != 0) {
-                    current = current->next;
+                    current = current->r;
                 }
 
                 if (current == NULL) {

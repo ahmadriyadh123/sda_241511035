@@ -7,17 +7,17 @@
 void tambahKota(addressKota *head, infotype namaKota) {
     addressKota newKota = (addressKota) malloc(sizeof(KotaNode));
     strcpy(newKota->kt, namaKota);
-    newKota->next = NULL;
+    newKota->r = NULL;
     newKota->p = NULL;
 
     if (*head == NULL) {
         *head = newKota;
     } else {
         addressKota current = *head;
-        while (current->next != NULL) {
-            current = current->next;
+        while (current->r != NULL) {
+            current = current->r;
         }
-        current->next = newKota;
+        current->r = newKota;
     }
     printf("Kota '%s' berhasil ditambahkan.\n", namaKota);
 }
@@ -33,7 +33,7 @@ void tampilkanDaftarKota(addressKota head) {
     while (current != NULL) {
         printf("- %s\n", current->kt);
         tampilkanOrang(current->p);
-        current = current->next;
+        current = current->r;
     }
 }
 
@@ -49,7 +49,7 @@ void hapusKota(addressKota *head, infotype namaKota) {
 
     while (current != NULL && strcmp(current->kt, namaKota) != 0) {
         prev = current;
-        current = current->next;
+        current = current->r;
     }
 
     if (current == NULL) {
@@ -66,9 +66,9 @@ void hapusKota(addressKota *head, infotype namaKota) {
     }
 
     if (prev == NULL) {
-        *head = current->next;
+        *head = current->r;
     } else {
-        prev->next = current->next;
+        prev->r = current->r;
     }
 
     free(current);
